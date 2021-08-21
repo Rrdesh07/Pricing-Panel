@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans',sans-serif;
+    text-transform:uppercase;
+}
+body{
+    background-color:#60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    max-width: 960px;
+    width: 100%;
+    text-align: center;
+}
+.pricing-img{
+    /* width: 219px;
+    height: 139px; */
+    margin: 0rem 0rem 1.5rem 0rem;
+    max-width: 100%;
+}
+.panel .pricing-features{
+    list-style-type:none;
+    color:rgb(1, 111, 249);
+    font-weight: 600;
+}
+.panel .pricing-header{
+    color: gray;
+    font-size: 1rem;
+    font-weight: 600;
+    padding:0.5rem;
+    /* margin: 1rem; */
+    margin-bottom: 2rem;
+}
+.panel .pricing-features .pricing-features-item{
+    color:rgb(1, 111, 249);
+    border-top: 1px solid rgb(225, 241, 255);
+    line-height: 1.5;
+    font-size: 0.8rem;
+    margin: 0.6rem auto;
+    text-align: center;
+    width: 90%;
+    letter-spacing: 1px;
+    padding: 0.8rem 0rem;
+}
+.panel .pricing-price{
+    display: block;
+    color:rgb(1, 111, 249);
+    font-weight:700;
+    font-size: 2rem;
+    border-top: 1px solid rgb(225, 241, 255);
+    width: 70%;
+    margin: 0rem auto 1rem auto ;
+    padding: 1rem;
+}
+.pricing-button,.pricing-button-is-featured{
+    border:1px solid rgb(157, 209, 255);
+    padding: 0.8rem 2.5rem;
+    margin: 25px 0px;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    color: rgb(52, 142, 254);
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out 0s;
+}
+.pricing-button:hover{
+    background-color: rgb(225, 241, 255);
+}
+.pricing-button-is-featured{
+    background-color: rgb(72, 170, 255);
+    color: white;   
+}
+.pricing-button-is-featured:hover{
+    background-color: rgb(52,142,254);
+    color: white;   
+}
+.pricing-plan{
+    border-bottom: none;
+    border-right: 1px solid rgb(225, 241, 255);
+    padding: 40px 50px;
+}
+.pricing-plan:last-child{
+    border-right:none;
+}
+
+@media screen and (max-width:920px){
+    .panel{
+        flex-direction: column;
+    }
+    .pricing-plan{
+        border-right: none;
+        padding: 25px 0px 40px 0px;
+    }
+    .pricing-price{
+        width: 100%;
+    }
+    .pricing-plan:nth-child(2){
+         border-top: 1px solid rgb(225, 241, 255);;
+    }
+}
